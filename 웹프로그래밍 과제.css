@@ -1,0 +1,379 @@
+*{background-color: #eefaff;
+color:#67C6E3}
+
+
+
+.image-container {
+    position: relative; 
+    display: inline-block; 
+    height: 200px;
+    width: 100%;
+}
+.image-container img {
+    width: 100%; 
+    height: 200px; 
+}
+.text-overlay {
+    position: absolute; 
+    top: 50%; 
+    left: 18%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255, 0); 
+    padding: 10px; 
+    color: white;
+    font-size: 300%;
+    font-weight: bolder;
+    text-align: center;
+    text-shadow: 5px 5px 13px #6893ff, -5px -5px 13px #6893ff;
+}
+div img{width: 300px;
+    height: 200px;
+}
+
+/*2번째 파트*/
+#b1{background-color: #eefaff;  
+    width: 700px;
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: #79b7f9;
+    border-style: double;
+    border-width: 8px;
+    text-align: left;
+    color: #67C6E3;
+}
+.text1{font-size: x-large; /*저는 장현정입니다 만 글자 다르게*/
+    font-weight: bolder;
+    color: #378CE7;
+}
+
+
+#nav_p{background-color: rgb(55, 140, 231,0);
+    width: 800px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    margin: 20px;
+    right: 15%;
+    border-color:#5356FF;
+    border-style: hidden;
+    border-width: 5px;
+    text-align: center; 
+    position: absolute; top: 1px; right: 1px;
+    text-decoration: none;
+}
+.nav_c {
+    background-color: rgb(55, 140, 231, 0.2);
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100px;
+    height: 50px;
+    padding: 13px 5px;
+    border-color: white;
+    border-style: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+    position: static;
+    text-decoration: none;
+    color: white;
+}
+.nav_c:hover {
+    background-color: rgb(55, 140, 231, 0.6);
+    color: #5356FF;
+    font-weight: 900;
+}
+.nav_c:active{background-color: rgb(55, 140, 231, 0.8);
+    color: rgb(255, 249, 249);
+    font-weight: 900;
+}
+.nav_c.a {
+    background-color: rgb(55, 140, 231, 0.0);
+    color: #5356FF;
+    font-weight: 900;
+}
+.a {
+    background-color: rgb(55, 140, 231, 0);
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+.a:hover {
+    background-color: rgb(55, 140, 231, 0.6) !important;
+    color: #5356FF !important;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+
+/*section1*/
+.flex_container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+}
+.flex_item {
+    flex: 1;
+    overflow: auto;
+    border: 4px double #79b7f9;
+    padding: 10px; 
+    margin: 5px; 
+    border-radius: 10px;
+}
+.text2{font-size: x-large; 
+    font-weight: bolder;
+    color: #2b89ee;
+}
+
+/* 좋아하는 것*/
+#sec1_p{background-color: #dff5ff;  
+    width: 650px;
+    height: 55px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #abd1f9;
+    border-style: solid;
+    border-width: 3px;
+    position: relative;
+}
+.sec1_c{
+    background-color: #eefaff;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 200px;
+    height: 50px;
+    padding: 15px 8px;
+    border-color: white;
+    border-style: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+    position: static
+  
+}
+.sec1_c:hover {
+    background-color: rgba(81, 157, 237, 0.6);
+    color: #5356FF;
+    font-weight: 900;
+}
+.drop_a{background-color: rgba(81, 157, 237, 0);
+    color: #378CE7;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 10px;
+    text-align: center;
+}
+.drop_a:hover {
+    background-color: rgba(81, 157, 237, 0.6) !important;
+    color: #3437fe !important;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+
+/* 드롭다운 스타일 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+/* 드롭다운 내용 스타일 */
+.dropdown-content {
+    display: none; /* 초기에는 숨김 */
+    padding:10px;
+    position: absolute;
+    background-color: #eefaff;
+    min-width: max-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    text-decoration: none;
+    text-align: left;
+}
+
+/* 드롭다운 내용 활성화 시 표시되도록 설정 */
+.dropdown:hover .dropdown-content {
+    display: block; /* 호버 시 드롭다운 내용 표시 */
+}
+
+/* 드롭다운 내용 항목 스타일 */
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    border-bottom: 5px solid #DFF5FF;
+    cursor: pointer; /* 항목에 마우스를 가져가면 포인터 커서가 나타남 */
+    text-decoration: none;
+}
+
+/* 마지막 항목의 하단 경계 제거 */
+.dropdown-content a:last-child {
+    border-bottom: none;
+}
+
+/* 섹션 스타일 */
+.section {
+    display: none; /* 초기에는 숨김 */
+    margin-top: 20px;
+    padding: 10px;
+    border: 3px double #32beff;
+    border-radius: 15px;
+    position: static; 
+}
+
+/* 섹션을 활성화 시 표시되도록 설정 */
+.section:target {
+    display: block; /* URL 해시값에 해당하는 섹션을 표시 */
+}
+.text3{font-size: x-large; /*저는 장현정입니다 만 글자 다르게*/
+    font-weight: bolder;
+    color: #378CE7;
+}
+.text4{font-size: 130%;
+font-weight: bolder;
+color: #579de8;}
+
+
+/* 시간표*/
+caption{
+    color: #4547c0fa;
+    font-weight: bold;
+    font-size: 200%;
+}
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 80%;
+    color: black; text-align: center;
+}
+table.time{
+    border-radius: 10px; 
+    width: 90%;
+    margin-top: 50px;
+    border-collapse: separate ;
+    border-spacing: 5px 10px; 
+    border: 1px solid #5356FF;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+table.time thead{
+    padding: 5px;
+    width: auto;
+    height: auto;
+    font-weight: bold;
+    border: solid;
+    border-color: #3437fe;
+    text-align: center;
+    font-weight: bold;
+}
+table.time tbody{
+    padding: 5px;
+    width: auto;
+    height: auto;
+    font-weight:500;
+    border: none;
+}
+
+th, td {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(92, 203, 255, 0.051);
+    color: black;
+}
+
+#table_web{
+    background-color: #FEBBCC;
+    color: #0e12fc;
+}
+#table_web:hover{
+    background-color: #f390a9;
+    color: black;
+    font-weight: bolder;
+}
+#table_com{
+    background-color:#FFCCCC;
+    color: #0e12fc;
+}
+#table_com:hover{
+    background-color: #fcb9fe;
+    color: black;
+    font-weight: bolder;
+}
+#table_python{
+    background-color:#f7928c;
+    color: #0e12fc;
+}
+#table_python:hover{
+    background-color: rgb(253, 152, 255);
+    color: black;
+    font-weight: bolder;
+}
+#table_python_practice{
+    background-color:#ffe678;
+    color: #0e12fc;
+}
+#table_python_practice:hover{
+    background-color: rgb(181, 251, 154);
+    color: black;
+    font-weight: bolder;
+}
+#table_m{
+    background-color:#f5a74d;
+    color: #0e12fc;
+}
+#table_m:hover{
+    background-color: rgb(229, 113, 198);
+    color: black;
+    font-weight: bolder;
+}
+#table_coding{
+    background-color: #fa98e0;
+    color: #0e12fc;
+}
+#table_coding:hover{
+    background-color: rgb(252, 253, 153);
+    color: black;
+    font-weight: bolder;
+}
+#table_math{
+    background-color: #84e7aa;
+    color: #0e12fc;
+}
+#table_math:hover{
+    background-color: rgb(255, 100, 100);
+    color: black;
+    font-weight: bolder;
+}
+#table_write{
+    background-color: #c8befb;
+    color: #0e12fc;
+}
+#table_write:hover{
+    background-color: rgb(235, 218, 215);
+    color: black;
+    font-weight: bolder;
+}
+
+
+/* footer*/
+#footer {
+    background-color: #DFF5FF;
+    width: 400px;
+    height: 30px;
+    margin: 20px;
+    padding: 10px;
+    border-color: rgba(77, 153, 252, 0.791);
+    border-style: double;
+    border-width: 8px;
+    text-align: center;
+    font-weight: bolder;
+    border-radius: 30px;
+    border-collapse: separate;
+    border-spacing: 5px 10px;
+    box-shadow: 5px 5px 13px rgba(123, 167, 248, 0.3), -5px -5px 13px rgba(123, 167, 248, 0.3);
+}
+.text5 {
+    background-color: #DFF5FF;
+}
